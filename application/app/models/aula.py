@@ -33,11 +33,11 @@ def criar_aula(id_turma):
     try:
         cursor.execute(insert_aula, (id_turma, data))
         db_conn.commit()
+        return True
     except Exception as e:
         print(f"Não foi possível criar a aula: {e}")
         db_conn.rollback()
         return False
     finally:
         cursor.close()
-        db_conn.close()        
-        return True
+        db_conn.close()     
