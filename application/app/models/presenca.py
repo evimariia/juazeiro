@@ -6,7 +6,7 @@ def registrar_presenca(id_aula, id_matricula_aluno, situacao_presenca="VALIDACAO
 
 
     insert_presenca = """
-    INSERT INTO tb_presenca (id_aula, id_matricula_aluno, situacao_presenca)
+    INSERT INTO tb_presenca (id_aula, id_matricula, situacao_presenca)
     VALUES (%s, %s, %s)
     """
     try:
