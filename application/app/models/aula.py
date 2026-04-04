@@ -1,7 +1,7 @@
 from database.connection import get_connection
 from app.utils import hoje
 
-def buscar_turma(id_turma):
+def buscar_aula(id_turma):
     db_conn = get_connection()
     cursor = db_conn.cursor()
 
@@ -26,9 +26,10 @@ def criar_aula(id_turma):
 
     data = hoje()
 
+    # 0 = bloqueado | 1 = validação liberada pelo professor
     insert_aula = """
     INSERT INTO tb_aulas (id_turma, data_aula, permissao_validar)
-    VALUES (%s, %s, FALSE)
+    VALUES (%s, %s, 0)
     """
     try:
         cursor.execute(insert_aula, (id_turma, data))

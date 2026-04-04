@@ -1,7 +1,7 @@
 from datetime import datetime
 
 def dia_da_semana_atual():
-    dias = ["SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SABADO", "DOMINGO"]
+    dias = ["SEG","TER","QUA","QUI","SEX","SAB", "DOM"]
     dia_num = datetime.now().weekday()  # retorna numero de 0 a 6
     return dias[dia_num]
 
@@ -26,4 +26,4 @@ def turno_atual():
         return "Turno inválido"
 
 def hoje():
-    return datetime.now().strftime("%d-%m-%Y")
+    return datetime.now().strftime("%Y-%m-%d")
