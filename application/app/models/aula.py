@@ -1,5 +1,5 @@
-from database.connection import get_connection
-from app.utils import hoje
+from application.database.connection import get_connection
+from application.app.utils import hoje
 
 def buscar_aula(id_turma):
     db_conn = get_connection()
@@ -18,7 +18,7 @@ def buscar_aula(id_turma):
     cursor.close()
     db_conn.close()
 
-    return aula
+    return aula[0]
 
 def criar_aula(id_turma):
     db_conn = get_connection()

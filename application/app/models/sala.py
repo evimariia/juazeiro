@@ -11,4 +11,4 @@ def buscar_sala_por_dispositivo(id_dispositivo):
     cursor.close()
     db_conn.close()
 
-    return sala
+    return sala[0]

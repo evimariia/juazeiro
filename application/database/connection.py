@@ -21,4 +21,3 @@ def get_connection():
             print("Database does not exist")
         else:
             print(err)
-

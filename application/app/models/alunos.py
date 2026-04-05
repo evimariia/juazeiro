@@ -1,4 +1,4 @@
-from database.connection import get_connection
+from application.database.connection import get_connection
 
 def buscar_aluno_por_rfid(rfid_uid):
     db_conn = get_connection()
@@ -11,4 +11,4 @@ def buscar_aluno_por_rfid(rfid_uid):
     cursor.close()
     db_conn.close()
 
-    return aluno
+    return aluno[0]

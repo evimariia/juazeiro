@@ -11,7 +11,7 @@ def buscar_aluno_por_ra(ra_aluno):
     cursor.close()
     db_conn.close()
 
-    return aluno
+    return aluno[0]
 
 def validar_matricula(ra_aluno, id_turma):
     db_conn = get_connection()
