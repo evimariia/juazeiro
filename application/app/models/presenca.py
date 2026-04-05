@@ -1,6 +1,6 @@
 from database.connection import get_connection
 
-def registrar_presenca(id_aula, id_matricula_aluno, situacao_presenca="VALIDACAO_PENDENTE"):
+def inserir_presenca(id_aula, id_matricula_aluno, situacao_presenca="VALIDACAO_PENDENTE"):
     db_conn = get_connection()
     cursor = db_conn.cursor()
 
