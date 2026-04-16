@@ -4,7 +4,7 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from application.app.models.aula import buscar_aula, criar_aula
-from application.app.models.turma import buscar_todas_matriculas, buscar_todas_turma, buscar_turma
+from application.app.models.turma import buscar_turma
 from application.database.connection import get_connection
 from application.app.models.alunos import buscar_aluno_por_rfid
 

@@ -4,8 +4,8 @@
 
 #define SS_PIN 5    // ESP32 pin D5 (GPIO5) para SDA (SS) do RC522
 #define RST_PIN 22  // ESP32 pin D27 (GPIO27) para RST do RC522
-#define LED_VERDE 15
-#define LED_VERMELHO 21
+#define LED_VERDE 21
+#define LED_VERMELHO 26
 
 MFRC522 mfrc522(SS_PIN, RST_PIN); // Cria uma instância do MFRC522
 
