@@ -1,4 +1,4 @@
-from database.connection import get_connection
+from application.database.connection import get_connection
 
 def buscar_aluno_por_ra(ra_aluno):
     db_conn = get_connection()

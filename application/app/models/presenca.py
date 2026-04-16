@@ -1,4 +1,4 @@
-from database.connection import get_connection
+from application.database.connection import get_connection
 
 def inserir_presenca(id_aula, id_matricula_aluno, situacao_presenca="VALIDACAO_PENDENTE"):
     db_conn = get_connection()
