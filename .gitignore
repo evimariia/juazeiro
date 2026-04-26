@@ -5,3 +5,4 @@
 .vscode/ipch
 .env
 application\database\migrations\4_gerenciamento_users.sql
+venv
