@@ -1,6 +1,6 @@
 from datetime import datetime
 import flask
-from database.connection import get_connection
+from application.database.connection import get_connection
 
 app = flask.Flask(__name__)
 
