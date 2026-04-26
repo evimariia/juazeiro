@@ -5,7 +5,7 @@ from application.app.services.presenca_service import registrar_presenca_complet
 @patch('application.app.services.presenca_service.buscar_sala_por_dispositivo')
 @patch('application.app.services.presenca_service.buscar_aluno_por_rfid')
 @patch('application.app.services.presenca_service.buscar_turma')
-@patch('application.app.services.presenca_service.buscar_aula')
+@patch('application.app.services.presenca_service.buscar_aula_hoje')
 @patch('application.app.services.presenca_service.validar_matricula')
 @patch('application.app.services.presenca_service.buscar_aluno_por_ra')
 @patch('application.app.services.presenca_service.inserir_presenca')
